@@ -84,20 +84,48 @@
                      <a href="https://yuxinzhangmath.github.io/">Yuxin Zhang</a> <br>
                      to appear in <a href="https://focs.computer.org/2026/" target="_blank">FOCS 2026 </a> <br> 
                       <a href="https://arxiv.org/abs/2604.01519" target="_blank">arXiv:2604.01519</a> <br> <br>
-                     Theorem 2.10 is the key theorem underlying all our results. We spent too much time—maybe half a year—trying 
+                     
+                     In our paper, Theorem 2.10 is the key theorem underlying all our results. We spent too much time—maybe half a year—trying 
                      to prove a general result, but failed and only obtained a conditional result in the end, before turning to AI. 
-                     Recently, with the help of GPT-5.6-sol, we proved more general results (see 
+                     Recently, with the help of GPT-5.6 Sol, we proved more general results (see 
                      <a href="DQC1_trace_estimation_beyond_gap.pdf" target="_blank">this note</a>, which was written by GPT). 
-                     An impressive outcome is that DQC1-hardness holds for all Lipschitz functions. Note that previously, the DQC1 quantum 
-                     algorithm given by Cade and Montanaro was also for Lipschitz functions (arXiv:1706.09279). I may have missed some points, 
-                     but I checked the proofs and did not find any serious issue.
+                     The first result is a little surprising, because it only uses a uniform periodic Jacobi matrix with $a_i=0, b_i=1/2$ of dimension depending on
+                     the input function. In our paper, the choices of $a_i,b_i$ highly depend on the input function.
+                     Interestingly, this Jacobi matrix is indeed the case used in all previous results for some specific functions. 
+                     This particular Jacobi matrix corresponds to Chebyshev polynomials, and from the findings of our paper, it seems a natural object in DQC1-hardness.
+                     The extra condition for the DQC1-hardness is much weaker than the one in our paper.
+                     The second result is quite impressive, which says that DQC1-hardness holds for all Lipschitz functions. Note that previously, the DQC1 quantum 
+                     algorithm given by Cade and Montanaro was also for Lipschitz functions (arXiv:1706.09279). The proof is quite different from our current proof
+                     in the paper. I may have missed some points, but I checked the proofs and did not find any serious issues.
+
+
+                     In our paper, Theorem 2.10 is the key theorem underlying all our results. We 
+                     spent too much time—maybe half a year—trying to prove a general result, but
+                     failed and only obtained a conditional result in the end, before turning to AI. 
+                     Recently, with the help of GPT-5.6 Sol, we proved more general results 
+                     (see <a href="DQC1_trace_estimation_beyond_gap.pdf" target="_blank">this note</a>, which was written by GPT). 
+                     The first result is a little surprising, because it only uses a uniform periodic 
+                     Jacobi matrix with $a_i=0,b_i=1/2$ of dimension depending on the input function. 
+                     In our paper, the choices of $a_i,b_i$ highly depend on the input function. 
+                     Interestingly, this Jacobi matrix is indeed the case used in all previous results 
+                     for some specific functions. This particular Jacobi matrix corresponds to 
+                     Chebyshev polynomials, and from the findings of our paper, it seems to be a 
+                     natural object in DQC1-hardness. The extra condition for DQC1-hardness is 
+                     much weaker than the one in our paper. The second result is quite impressive: 
+                     it says that DQC1-hardness holds for all Lipschitz functions. Note that 
+                     previously, the DQC1 quantum algorithm given by Cade and Montanaro was 
+                     also for Lipschitz functions (arXiv:1706.09279). The proof is quite different 
+                     from our current proof in the paper. I may have missed some points, but I 
+                     checked the proofs and did not find any serious issues.
+                     
            </p>
            </li>  
                     
           <li>
            <p class="small"> 
                       DQC1-hardness of estimating log-determinants  <a href="complexity_logdet.pdf" target="_blank">[Notes]</a> <br>
-                      with  Xinzhao Wang <br>
+                      with  Xinzhao Wang <br> <br>
+                     
                      In this short note, we prove that estimating the log-determinant of log-local Hamiltonians is DQC1-complete.
            </p>
            </li>  
